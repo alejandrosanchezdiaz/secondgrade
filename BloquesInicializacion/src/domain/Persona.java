@@ -7,6 +7,28 @@ public class Persona {
 
     static {
         System.out.println("Ejecucion bloque estatico");
+        ++Persona.contadorPersonas;
+        //idPersona = 10;
+    }
+
+    {
+
+        System.out.println("Ejecucion bloque no estatico");
+        this.idPersona = Persona.contadorPersonas++;
+
+    }
+
+    public Persona() {
+        System.out.println("Ejecucion del constructor");
+    }
+
+    public int getIdPersona() {
+        return idPersona;
+    }
+
+    @Override
+    public String toString() {
+        return "Persona{" + "idPersona=" + idPersona + '}';
     }
 
 }
