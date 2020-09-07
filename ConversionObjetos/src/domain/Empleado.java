@@ -30,4 +30,12 @@ public class Empleado {
         this.sueldo = sueldo;
     }
 
+    @Override
+    public String toString() {
+        return "Empleado {" + "nombre = " + nombre + ", sueldo = " + sueldo + '}';
+    }
+    
+    
+    
+
 }
