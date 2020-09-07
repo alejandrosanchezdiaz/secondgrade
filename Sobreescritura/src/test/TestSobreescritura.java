@@ -1,10 +1,25 @@
 package test;
 
-import domain.Gerente;
+import domain.*;
 
 public class TestSobreescritura {
     public static void main(String[] args) {
-        Gerente gerente1 = new Gerente("Alejandro", 5999.99, "Sistemas");
-        System.out.println("Gerente1 = " + gerente1.obtenerDetalles());
+       Empleado empleado = new Empleado ("Alejandro", 10000);
+       empleado.obtenerDetalles();
+       //System.out.println("Empleado = " + empleado.obtenerDetalles());
+       imprimir(empleado);
+       
+       Gerente gerente = new Gerente ("Lorena", 20000, "Sistemas");
+       //System.out.println("Gerente = " + gerente.obtenerDetalles());
+       imprimir(gerente);
     }
+    
+    public static void imprimir(Empleado empleado){
+         System.out.println("empleado = " + empleado.obtenerDetalles());
+        
+    }
+    
+    
+    
+    
 }
