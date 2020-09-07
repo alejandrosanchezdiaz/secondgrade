@@ -1,17 +1,15 @@
 package paquete1;
 
-public class Clase1 {
-    protected String atributoProtected = "Valor atributo protected";
+ class Clase1 {
+    String atributoDefault= "Valor atributo default";
     
-    protected Clase1 (){
-        System.out.println("Constructor protected");
+    Clase1 (){
+        System.out.println("Constructor default");
     }
     
-    public Clase1 (String arg){
-        System.out.println("Constructor Publico");
-    }    
-    protected void metodoProtected(){
-        System.out.println("Metodo Protected");
+  
+    void metodoDefault(){
+        System.out.println("Metodo default");
     }
     
 }
