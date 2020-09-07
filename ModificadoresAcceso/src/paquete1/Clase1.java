@@ -1,15 +1,31 @@
 package paquete1;
 
  class Clase1 {
-    String atributoDefault= "Valor atributo default";
+    private String atributoPrivate= "Valor atributo private";
     
-    Clase1 (){
-        System.out.println("Constructor default");
+    private Clase1 (){
+        System.out.println("Constructor private");
     }
     
+    
+    
+    
+    
+    public Clase1(String arg){
+        this();
+        System.out.println("Constructor publico");
+    }
   
-    void metodoDefault(){
-        System.out.println("Metodo default");
+    private void metodoPrivate(){
+        System.out.println("Metodo private");
+    }
+
+    public String getAtributoPrivate() {
+        return atributoPrivate;
+    }
+
+    public void setAtributoPrivate(String atributoPrivate) {
+        this.atributoPrivate = atributoPrivate;
     }
     
 }
