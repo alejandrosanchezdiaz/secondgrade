@@ -12,7 +12,9 @@ public class TestExcepciones {
             e.printStackTrace(System.out);
             System.out.println(e.getMessage());
         }
-        
+        finally{
+            
+        }
         System.out.println("resultado = " + resultado);
     }
 
